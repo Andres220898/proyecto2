@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/estilodash.css">
+  <link rel="shortcut icon" href="css/Imagenes/icono.png" type="image/x-icon">
+  <!-- fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <section class="grid-container">
+  <!-- header -->
+    <header class="header">
+      <section class="menu-icon" onclick="openSidebar()">
+        <span class="material-symbols-outlined">Menu</span>
+      </section>
+      <section class="header-left">
+        <span class="material-symbols-outlined"><ion-icon name="search-outline"></ion-icon></span>
+      </section>
+      <section class="header-right">
+        <span class="material-symbols-outlined"><ion-icon name="notifications-outline"></ion-icon></span>
+        <span class="material-symbols-outlined"><ion-icon name="mail-outline"></ion-icon></span>
+        <span class="material-symbols-outlined"><ion-icon name="person-circle-outline"></ion-icon></span>
+      </section>
+    </header>
+    <!-- menu_lateral -->
+    <aside id="sidebar">
+      <section class="sidebar-title">
+        <section class="sidebar-brand">
+          <span class="material-symbols-outlined"><ion-icon name="file-tray-stacked-outline"></ion-icon></span>Salsamentaria Palermo
+        </section>
+        <span class="material-symbols-outlined" onclick="closeSidebar()"><ion-icon name="close-outline"></ion-icon></span>
+      </section>
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item"><ion-icon name="newspaper-outline"></ion-icon>Clientes</li>
+        <li class="sidebar-list-item"><ion-icon name="bag-check-outline"></ion-icon></ion-icon>Productos</li>
+        <li class="sidebar-list-item"><ion-icon name="logo-microsoft"></ion-icon>Inventario</li>
+        <li class="sidebar-list-item"><ion-icon name="newspaper-outline"></ion-icon>articulos</li>
+        <li class="sidebar-list-item"><ion-icon name="podium-outline"></ion-icon>ventas</li>
+        <li class="sidebar-list-item"><ion-icon name="reader-outline"></ion-icon>Compras</li>
+        <li class="sidebar-list-item"><ion-icon name="storefront-outline"></ion-icon>proveedores</li>
+      </ul> 
+    </aside>    
+    <!-- main -->
+    <main class="main-container">
+      <section class="main-title">
+        <p class="font-weight-bold"> dashboard</p>
+      </section>
+
+      <section class="main-cards">
+        <section class="card">
+          <section class="card-inner">
+            <p class="text-primary">Productos</p>
+            <span class="sidebar-list-item"><ion-icon name="grid-outline">Inventario_2</ion-icon></span>
+          </section>
+          <span class="text-primary font-weight-bold">249</span>
+        </section>
+
+        <section class="card">
+          <section class="card-inner">
+            <p class="text-primary">Pedidos</p>
+            <span class="sidebar-list-item"><ion-icon name="grid-outline">añadir_pedidos</ion-icon></span>
+          </section>
+          <span class="text-primary font-weight-bold">400</span>
+        </section>
+
+        <section class="card">
+          <section class="card-inner">
+            <p class="text-primary">Alerta inventario</p>
+            <span class="sidebar-list-item"><ion-icon name="grid-outline">Stock</ion-icon></span>
+          </section>
+          <span class="text-primary font-weight-bold">100</span>
+        </section>
+      </section>  
+    </main>    
+  </section>
+
+  <!-- javascrip -->
+  <script src="js/estilodash.js"></script>
+
+  <!-- iconos -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(Imagenes/imagen.jpg);
+    
+}
+header{
+    background: #ac11119d;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 20px;
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li { /*Estilo de ubicacion de los menus */
+    list-style: none;
+    margin-left: 75px;
+    padding: 15px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a { /* Estilo de lestra de los menus*/
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+.login{ /* Estilo de cuadro de ingreso */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 300px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5); /* Sombra*/
+    border-radius: 10px;
+}
+
+.login h2{ /* Estilo de letra h2 */
+    margin: 0 0 30px;
+    padding: 0;
+    color: #ccda0b;
+    text-align: center;
+}
+
+.login .uso-box{
+    position: relative;
+}
+
+.login .uso-box input { /*Estilo interno de la caja */
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #da680b;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #970505;
+    outline: none;
+    background: transparent;
+}
+
+.login .uso-box label { /*Estilo label*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #da680b;
+    pointer-events: none;
+    transition: .5s;
+}
+.login .uso-box input:focus~label,
+.login .uso-box input:valid~label { 
+    top: -20px;
+    left: 0;
+    color: #da680b;
+    font-size: 12px;
+    
+}
+.login form a{/*Estilo SUBMIT*/
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #da680b;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+
+}
+
+.login a:hover{/*Estilo SUBMIT*/
+    color: #da680b;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #da680b,
+                0 0 25px #da680b,
+                0 0 50px #da680b,
+                0 0 100px #da680b;
+}
+
+.login a span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,
+        transparent, #da680b);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+
+.login a span:nth-child(2){
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, 
+        transparent, #da680b);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, 
+        transparent, #da680b);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,
+        transparent, #da680b);
+    animation: btn-anim4 1s linear infinite;
+    animation: .75s;
+}
+@keyframes btn-anim4{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+/*Daremos tamaño a la pagina que nos quede de color blanca y el tipo de letra */
+.page_404{
+    padding: 50px 0 ;
+    background: #fff;
+    font-family: "Arvo", serif;
+}
+.page_404 img{width: 100%;}
+.four_zero_four_bg{
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif); /*Ests parte es el gif del cavernicola */
+    height: 400px;
+    background-position: center;
+}
+.four_zero_four_bg h1{
+    font-size: 70px;
+}
+
+/*Daremos color al boton del enlace */
+.link_404{
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #eb9b08;
+    margin: 20px 0;
+    display: inline-block;}
+.contant_box_404{
+    margin-top: -50px;}

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-image: url(Imagenes/imagen.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+/*Modificamos el menu */
+.menu{
+    background-color: #d8711d;
+    border: solid #ffF;
+    border-radius: 20px 0 40px;
+    width: 265px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #dd870777;
+}
+.menu h2{
+    width: 260px;
+    height: auto;
+    text-align: center;
+    background-color: #ccc;
+    color: #080606;
+    border-radius: 20px 0 0;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    height: 55px;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    background:#d8711d;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: .1s;
+    border: 1px solid #ffF; 
+    text-align: center;
+}
+
+.menu:hover ul li a{
+    color: #d8711d;
+}
+.menu ul li a:hover{
+    color:#ffF;
+    transform: scale(1.1);
+    background-color: rgb(207, 137, 6);
+    border: 1px solid #d1a205;
+}
+
+.menu ul li a:hover::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -1.5px;
+    top:-12.5px;
+    border-style: solid;
+    border-width: 0 0 11.5px 11.5px;
+    border-color: transparent transparent #df791b;
+
+}
+.menu ul li a:hover::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -1.5px;
+    top:-12.5px;
+    border-style: solid;
+    border-width: 11.5px 0 0 11.25;
+    border-color: transparent transparent #df791b;
+
+}
+.menu p{
+    text-align: center;
+    text-transform: uppercase;
+    background: hwb(27 18% 43% / 0.522);
+    margin-top: 10px;
+}
+img{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    float: center;
+    border-radius: 50%;
+
+}
+
+footer{ /*Colores de pie de pagina */
+    display: flex;
+    background: #d1a205;
+    padding: 60px 0 10px 0;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 140px;
+}
+
+.sec1{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.part1{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.part2{ /*Diseño de letra de pie de pagina */
+    color: #080606;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+}

@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(Imagenes/imagen.jpg);
+}
+
+header{
+    background: #ac11119d;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 20px;
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li { /*Estilo de ubicacion de los menus */
+    list-style: none;
+    margin-left: 75px;
+    padding: 15px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a { /* Estilo de lestra de los menus*/
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+.conte{ /* Diseño de contenedor principal*/
+    width: 95%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.cont-ubi{
+    justify-content: center;
+    display: flex;
+}
+footer{ /*Colores de pie de pagina */
+    display: flex;
+    background: #d1a205;
+    margin: auto;
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+}
+
+.sec1{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.part1{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.part2{ /*Diseño de letra de pie de pagina */
+    color: #080606;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+}
