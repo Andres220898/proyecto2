@@ -11,7 +11,7 @@
 <body>
   <header>
         <div class="menu">
-           <a href="landing.html"> <img src="css/Imagenes/icono.png" alt="" ></a>
+            <img src="css/Imagenes/icono.png" alt="">
             <nav>
                 <ul>
                     <li><a href="landing.html">Inicio</a></li>
@@ -24,28 +24,45 @@
     </header>
     <section class="form-register">
         <h4>Formulario Registro</h4>
-        <input class="controls" type="text" name="nombres" placeholder="Ingrese su Nombre" required> 
-        <input class="controls" type="text" name="apellidos" placeholder="Ingrese su Apellido" required>
-        <input class="controls" type="email" name="correo" placeholder="Ingrese su Correo" required>
-        <input class="controls" type="number" name="celular" placeholder="Ingrese numero de celular"    required>
-        <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña"   required>
-        <input class="controls" type="password" name="rcontraseña" placeholder="Repita contraseña"  required>
-
-        <div class="term-condiciones">
-            <input type="checkbox" name="" id="terminos">
-            <label for="terminos">Acepto los terminos y condiciones </label>
-            <p></p>
-        </div>
-            <form >
-                <a href="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  <b>Registrarse</b>  
-                </a>
-                
-            </form>
-      </section>
-</body>
+        <form id="registration-form">
+            <input class="controls" type="text" name="nombres" placeholder="Ingrese su Nombre" required>
+            <input class="controls" type="text" name="apellidos" placeholder="Ingrese su Apellido" required>
+            <input class="controls" type="email" name="correo" placeholder="Ingrese su Correo" required>
+            <input class="controls" type="number" name="celular" placeholder="Ingrese numero de celular" required>
+            <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña" required>
+            <input class="controls" type="password" name="rcontraseña" placeholder="Repita contraseña" required>
+            
+            <div class="term-condiciones">
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="terminos">Acepto los terminos y condiciones</label>
+                <p></p>
+            </div>
+            
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <b>Registrarse</b>
+            </button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío automático del formulario
+            
+            var form = event.target;
+            
+            if (form.checkValidity()) {
+                // Si el formulario es válido, puedes enviarlo aquí usando Ajax o realizar otras acciones necesarias.
+                // Por ahora, solo mostraremos un mensaje de éxito.
+                alert('Formulario enviado con éxito');
+            } else {
+                // Si el formulario no es válido, puedes mostrar mensajes de error o realizar otras acciones necesarias.
+                alert('Por favor, complete todos los campos obligatorios');
+            }
+        });
+    </script>
+        </body>
 </html>

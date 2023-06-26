@@ -94,9 +94,10 @@ nav ul li a:hover::before{
     color: rgb(5, 4, 4);
 }
 
-.form-register a { /*Color de TyC*/
+.form-register button { /*Color de TyC*/
     color: white;
     text-decoration: none;
+    background: transparent;
 }
 
 .form-register a:hover { /*Color al intentar leer los TyC */
@@ -113,7 +114,7 @@ nav ul li a:hover::before{
     margin-bottom: 20px;
     letter-spacing: 3px;
 }
-.form-register a:hover{/*Estilo Registrarse al pasar el cursos*/
+.form-register button:hover{/*Estilo Registrarse al pasar el cursos*/
     color: #da680b;
     color: #fff;
     border-radius: 5px;
@@ -123,7 +124,7 @@ nav ul li a:hover::before{
                 0 0 100px #da680b;
 }
 
-.form-register form a{/*Estilo Registrarse*/
+.form-register form button{/*Estilo Registrarse*/
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -139,7 +140,7 @@ nav ul li a:hover::before{
     border-radius: 10px;
 }
 
-.form-register a span:nth-child(1){
+.form-register button span:nth-child(1){
     top:0;
     left: -100%;
     width: 100%;
@@ -159,7 +160,7 @@ nav ul li a:hover::before{
     }
 }
 
-.form-register-box  a span:nth-child(2){
+.form-register-box  button span:nth-child(2){
     top:-100%;
     right: 0;
     width: 2px;
@@ -179,7 +180,7 @@ nav ul li a:hover::before{
     }
 }
 
-.form-register-box a span:nth-child(3) {
+.form-register-box button span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -200,7 +201,7 @@ nav ul li a:hover::before{
     }
 }
 
-.form-register-box a span:nth-child(4) {
+.form-register-box button span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
