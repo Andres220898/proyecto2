@@ -50,19 +50,18 @@
     
     <script>
         document.getElementById('registration-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita el envío automático del formulario
+            event.preventDefault(); // Evitamos el ingreso en blanco
             
             var form = event.target;
             
             if (form.checkValidity()) {
-                // Si el formulario es válido, puedes enviarlo aquí usando Ajax o realizar otras acciones necesarias.
-                // Por ahora, solo mostraremos un mensaje de éxito.
-                alert('Formulario enviado con éxito');
+                // Si el formulario es válido, redirige a la página de ingreso, asi evitamos el uso de u a href
+                window.location.href = 'ingreso.html';
             } else {
-                // Si el formulario no es válido, puedes mostrar mensajes de error o realizar otras acciones necesarias.
+                // Si no ingresa los datos completos.
                 alert('Por favor, complete todos los campos obligatorios');
             }
         });
     </script>
-        </body>
+</body>
 </html>

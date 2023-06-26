@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesion</title>
+    <title>Inicio de sesión</title>
     <link rel="stylesheet" href="css/estiloingreso.css">
     <link rel="shortcut icon" href="css/Imagenes/icono.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="menu">
-           <a href="landing.html"> <img src="css/Imagenes/icono.png" alt="" ></a>
+           <a href="landing.html"> <img src="css/Imagenes/icono.png" alt=""></a>
             <nav>
                 <ul>
                     <li><a href="landing.html">Inicio</a></li>
@@ -23,17 +23,17 @@
     </header>
 
     <div class="login">
-        <h2>Inicio de sesion</h2>
-        <form>
+        <h2>Inicio de sesión</h2>
+        <form id="login-form">
             <div class="uso-box">
-                <input type="text" name=""required>
+                <input type="text" name="usuario" required>
                 <label>Usuario</label>
             </div>
             <div class="uso-box">
-                <input type="password" name=""required>
+                <input type="password" name="contraseña" required>
                 <label>Contraseña</label>
             </div>
-            <a href="dashboard.html">
+            <a href="#" class="login-button">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,5 +42,27 @@
             </a>
         </form>
     </div>
+
+    <script>
+        document.querySelector('.login-button').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            
+            var form = document.getElementById('login-form');
+            var usuario = form.usuario.value;
+            var contraseña = form.contraseña.value;
+            
+            // Realiza acciones adicionales con los datos ingresados
+            // Por ejemplo, puedes validar los campos o enviar una solicitud al servidor
+            
+            // Ejemplo de validación básica
+            if (form.checkValidity()) {
+                // Si las credenciales son válidas, redirige a otra página
+                window.location.href = 'dashboard.html';
+            } else {
+                // Si las credenciales no son válidas, muestra un mensaje de error
+                alert('Usuario o contraseña incorrectos');
+            }
+        });
+    </script>
 </body>
 </html>
