@@ -84,8 +84,9 @@ nav ul li a:hover::before{
     font-weight: 600;
     text-align: center;
     margin-bottom: 25px;
-    color: rgb(216, 76, 11);
+    color: rgb(19, 17, 0);
     text-transform: uppercase;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .5);
 }
 
 .contenido{ /* Estilo contenido de caja */
@@ -129,11 +130,11 @@ nav ul li a:hover::before{
     margin-top: 20px;
 }
 
-.info .redes-s a {
+.info .redes-s a { /*Diseño botones de redes */
     display: flex;
     width: 40px;
     height: 40px;
-    background: #359978;
+    background: #c94204;
     color: #fff;
     margin: 5px;
     justify-content: center;
@@ -145,7 +146,7 @@ nav ul li a:hover::before{
 
 .info .redes-s a:hover{
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .4) ;
-    background: black;
+    background: rgb(110, 196, 13);
 }
 
 .formulario{ /*Estilo formulario */
@@ -160,6 +161,8 @@ nav ul li a:hover::before{
     border: 1px solid #ac9595;
     font-weight: 400;
     outline: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(8, 8, 8);
 }
 
 .formulario textarea{
@@ -182,7 +185,6 @@ nav ul li a:hover::before{
     float: right;
     text-transform: uppercase;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
 }
 
 .formulario button:hover{
