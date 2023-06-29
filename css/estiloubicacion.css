@@ -2,7 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url(Imagenes/imagen.jpg);
+    background-image: url(Imagenes/fondoubi.jpg);
+    background-size: contain;
 }
 
 header{
@@ -66,7 +67,9 @@ nav ul li a:hover::before{
     justify-content: center;
     margin: auto;
 }
-
+.textos{
+    color: transparent;
+}
 .cont-ubi{
     justify-content: center;
     display: flex;

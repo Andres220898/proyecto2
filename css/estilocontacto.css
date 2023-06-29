@@ -9,10 +9,8 @@ a{ /* Estilos de los ahref */
 }
 
 body{ /*Estilo del cuerpo de la pestaña */
-    background: #c28f4471;
-    font-size: 16px;
-    background-image: url(Imagenes/imagen.jpg);
-
+    background-image: url(Imagenes/portada.jpg);
+    background-size: cover;
 }
 header{
     background: #ac11119d;
