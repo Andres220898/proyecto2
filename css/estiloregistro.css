@@ -11,7 +11,7 @@ body {
 }
 
 header{
-    background: #ac11119d;
+    background: #9438389d;
     width: 100%;
     clear: both;
     content: "";
@@ -45,7 +45,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de letra de los menus*/
     text-decoration: none;
-    color: #444;
+    color: #f3f0f0;
     font-weight: bold;
 }
 

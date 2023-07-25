@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: sans-serif;
     background-image: url(Imagenes/fondoubi.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 
 header{
@@ -41,7 +41,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de lestra de los menus*/
     text-decoration: none;
-    color: #444;
+    color: #e9e3e3;
     font-weight: bold;
 }
 
@@ -81,14 +81,13 @@ footer{ /*Colores de pie de pagina */
     margin: auto;
     overflow: hidden;
     width: 100%;
-    height: 80px;
+    height: 100%;
 }
 
 .sec1{ /*Estilo de pie de pagina */
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
-    margin: auto;
 
 }
 

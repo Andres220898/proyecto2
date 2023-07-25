@@ -13,7 +13,7 @@ body{ /*Estilo del cuerpo de la pestaña */
     background-size: cover;
 }
 header{
-    background: #ac11119d;
+    background: #9438389d;
     width: 100%;
     clear: both;
     content: "";
@@ -47,7 +47,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de letra de los menus*/
     text-decoration: none;
-    color: #444;
+    color: #f5ecec;
     font-weight: bold;
 }
 

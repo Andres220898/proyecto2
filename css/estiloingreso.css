@@ -6,7 +6,7 @@ body{
     
 }
 header{
-    background: #ac11119d;
+    background: #9438389d;
     width: 100%;
     clear: both;
     content: "";
@@ -40,7 +40,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de letra de los menus*/
     text-decoration: none;
-    color: #444;
+    color: #e7dfdf;
     font-weight: bold;
 }
 
@@ -89,7 +89,7 @@ nav ul li a:hover::before{
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #da680b;
+    color: #e9e5e2;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #970505;
@@ -103,7 +103,7 @@ nav ul li a:hover::before{
     left: 0;
     padding: 10px 0;
     font-size: 16px;
-    color: #da680b;
+    color: rgb(192, 83, 11);
     pointer-events: none;
     transition: .5s;
 }
@@ -111,7 +111,7 @@ nav ul li a:hover::before{
 .login .uso-box input:valid~label { 
     top: -20px;
     left: 0;
-    color: #da680b;
+    color: #eeeae7;
     font-size: 12px;
     
 }
@@ -119,7 +119,7 @@ nav ul li a:hover::before{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #da680b;
+    color: #050504;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -127,7 +127,7 @@ nav ul li a:hover::before{
     transition: .5s;
     margin-top: 40px;
     letter-spacing: 4px;
-    background: transparent;
+    background-color: #d1671173;
 
 }
 
