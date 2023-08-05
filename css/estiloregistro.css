@@ -1,6 +1,11 @@
-*{
-  
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -10,20 +15,22 @@ body {
     position: relative;
 }
 
-header{
-    background: #9438389d;
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
     width: 100%;
     clear: both;
     content: "";
     display: table;
-    border-radius: 20px;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
 }
-.menu{ 
+
+.menu {
     width: 900px;
     margin: 0 auto;
 }
 
-img{ /* Estilo de imagen de menu */
+img {
     width: 120px;
     height: 70px;
     float: left;
@@ -31,11 +38,11 @@ img{ /* Estilo de imagen de menu */
     border-radius: 50%;
 }
 
-nav{
+nav {
     float: right;
 }
 
-nav ul li { /*Estilo de ubicacion de los menus */
+nav ul li {
     list-style: none;
     margin-left: 75px;
     padding: 15px 0;
@@ -43,80 +50,90 @@ nav ul li { /*Estilo de ubicacion de los menus */
     position: relative;
 }
 
-nav ul li a { /* Estilo de letra de los menus*/
+nav ul li a {
     text-decoration: none;
-    color: #f3f0f0;
+    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
     font-weight: bold;
+    font-size: 15px; /* Aumentar el tamaño de la letra */
+    text-align: center;
+    padding: 0 20px 0 20px;
 }
 
-nav ul li a::before{
+nav ul li a::before {
     display: block;
     content: "";
     width: 0%;
-    background: #444;
+    background: rgb(7, 6, 6); /* Cambiar el color del subrayado a blanco */
     height: 5px;
     top: 0;
     position: absolute;
     transition: width 0.2s;
 }
 
-nav ul li a:hover::before{
+nav ul li a:hover::before {
     width: 100%;
 }
 
-.form-register { /*Diseño de caja */
+.form-register {
     width: 350px;
     background: #24303c69;
     padding: 25px;
     margin: auto;
     margin-top: 10px;
-    border-radius: 100px;
+    border-radius: 2px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #0e0101;
     text-transform: uppercase;
     text-align: center;
-    
+    font-size: 18px; /* Aumentar el tamaño de la letra */
 }
+
 .form-register h4 {
-    font-size: 22px;
+    font-size: 26px; /* Aumentar el tamaño de la letra */
     margin-bottom: 20px;
 }
 
-.controls { /*Diseño de los inputs */
+.controls {
     width: 100%;
-    background: #bd561ba4; /*Color de caja de inputs */
+    background: linear-gradient(135deg, #FF6347, #FFA500, #dfdf16); 
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #e08002;
     font-family: 'calibri';
     font-size: 18px;
-    color: rgb(5, 4, 4); /*Color de letra input*/
+    color: rgb(7, 6, 6);
 } 
 
-.controls::placeholder{ /*color del texto placehholder */
-    color: #000000b6;
+.controls::placeholder {
+    color: #e63904; /* Color amarillo suave para el placeholder */
     text-align: center;
 }
 
-.form-register button { /*Color de TyC*/
+.form-register input[type="text"]::placeholder,
+.form-register input[type="email"]::placeholder,
+.form-register input[type="password"]::placeholder {
+    color: #050404; /* Color rojo suave para los placeholders de inputs */
+}
+
+.form-register button {
     color: white;
     text-decoration: none;
     background: transparent;
 }
 
-.form-register a{
+.form-register a {
     text-decoration: none;
     color: #fff;
 }
 
-.form-register a:hover { /*Color al intentar leer los TyC */
+.form-register a:hover {
     color: rgba(240, 92, 7, 0.767);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.titulo{ /* estilo titulo registrate */
+.titulo {
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -124,17 +141,18 @@ nav ul li a:hover::before{
     margin-bottom: 20px;
     letter-spacing: 3px;
 }
-.form-register button:hover{/*Estilo Registrarse al pasar el cursos*/
+
+.form-register button:hover {
     color: #da680b;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 5px #da680b,
                 0 0 25px #da680b,
                 0 0 50px #da680b,
                 0 0 100px #da680b;
 }
 
-.form-register form button{/*Estilo Registrarse*/
+.form-register form button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;

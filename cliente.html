@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <!-- stylos para el dash -->
+    <link rel="stylesheet" href="./css/dash_style.css">
+</head>
+<body>
+    <!-- parametros de grid en el main -->
+    <main>    
+        <!-- parametros del header y el search bar -->
+        <header>
+            <article class="search-container">
+                <a href="">
+                    <img class="search-icon" src="img/busqueda.png" alt="buscar" title="Buscar">
+                </a>
+                <input type="search" name="Buscar" placeholder="Buscar producto, cliente, proveedor...">
+            </article>
+            
+            <a href="">
+                <img src="./img/campanas.png" alt="Notificaciones" title="Notificaciones">
+            </a>
+            <a href="">
+                <img src="img/sobres.png" alt="Mensajes" title="Mensajes">
+            </a>
+            <a href="">
+                <img src="img/circulo-de-usuario.png" alt="Usuario" title="Usuario">
+            </a>
+            <a href="./ingreso.html">
+                <img src="img/logout.png" alt="Cerrar sesión" title="Cerrar sesión">
+            </a>
+        </header>
+            <!-- parametros del menu -->
+        <aside>
+            <!-- titulos del menu -->
+            <section class="menu-title">
+                <img class="menu-logo"src="img/icono.png" alt="Logo">
+                <h2>Salsamentaria Palermo</h2>
+            </section>
+            <!-- items del menu -->
+            <ul class="menu-items">
+                <li>
+                    <a href="./dashboard.html"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
+                           
+                </li>
+                <li>
+                    <a href="./cliente.html"><img src="./img/group_.png" alt="Clientes">Clientes</a>    
+                           
+                </li>
+                
+                <li>
+                    <a href="./productos.html"><img src="./img/storefront_FILL0_wght400_GRAD0_opsz40.png" alt="Productos">Productos</a>
+                    
+                </li>
+                <li>
+                    <a href=""><img src="./img/almacen-alternativo.png" alt="Inventario">Inventario</a>
+                    
+                </li>
+                <li>
+                    <a href=""><img src="./img/article_.png" alt="Categorias">Categorias</a>
+                    
+                </li>
+                <li>
+                    <a href=""><img src="./img/sell_.png" alt="Ventas">Ventas</a>
+                    
+                </li>
+                <li>
+                    <a href=""><img src="./img/inventory_FILL0_wght400_GRAD0_opsz40.png" alt="Compradores">Compras</a>
+                    
+                </li>
+                <li>
+                    <a href=""><img src="./img/local_shipping.png" alt="Proveedores">Proveedores</a>
+                    
+                </li>
+            </ul>
+
+        </aside>
+
+        <!-- contenedor central -->
+        <section class="main-section">
+            <section class="boton-modal">
+                <h2>Clientes</h2>
+                <label for="btn-modal">
+                    Agregar Cliente
+                </label>
+                
+            </section>
+            <section class="tabular--wrapper">
+                <h3 class="tabla--title">Información general de clientes </h3>
+                <article class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>FECHA REGISTRO</th>
+                                <th>NOMBRES</th>
+                                <th>APELLIDOS</th>
+                                <th>CORREO ELECTRÓNICO</th>
+                                <th>DIRECCIÓN</th>
+                                <th>TELÉFONO CONTACTO</th>
+                                <th>ESTADO</th>
+                                <th>ACCIÓN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01/01/23</td>
+                                <td>Daniela Valentina</td>
+                                <td>Perez Martinez</td>
+                                <td>DanielaValentinaPerez@gmail.co</td>
+                                <td>calle27 d surn27 c 51</td>
+                                <td>7266237</td>
+                                <td>Activo</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>12/03/23</td>
+                                <td>Alejandro Stiven</td>
+                                <td>Rodriguez Rodriguez</td>
+                                <td>AlejandroStivenRodriguez@gmail.co</td>
+                                <td>diagonal 40n41 61</td>
+                                <td>2426339</td>
+                                <td>Activo</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>20/06/23</td>
+                                <td>Manuel Alejandro</td>
+                                <td>Mora Garcia</td>
+                                <td>ManuelAlejandroMora@gmail.co</td>
+                                <td>carrera 23n35-48</td>
+                                <td>5462196</td>
+                                <td>Activo</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>03/01/23</td>
+                                <td>Cindy Juan</td>
+                                <td>Bedoya Mejia</td>
+                                <td>CindyLorenaBedoya@gmail.co</td>
+                                <td>calle 35n33-29</td>
+                                <td>1741197</td>
+                                <td>Activo</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>30/01/23</td>
+                                <td>David Manuel</td>
+                                <td>Perez Garcia</td>
+                                <td>DavidManuelPerez@gmail.co</td>
+                                <td>carrera 53n70-56</td>
+                                <td>4010713</td>
+                                <td>Activo</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="10">Total clientes 101</td>
+                            </tr>
+                        </tfoot>
+                        
+                    </table>
+                </article>
+                   
+            </section>
+
+        </section>
+
+        <!-- Venta emergente de registro ------------------------------------->
+        <input type="checkbox" id="btn-modal">
+        <article class="container-modal">
+            <span class="content-modal">
+                <h2>INGRESE DATOS DE CLIENTE</h2>
+                <form class ="form" action="">
+                    <article class="form-container">
+                        
+                        <article class="form-group">
+                            <input type="text" id="name" class="form__input"  placeholder=" " autocomplete="name" required> 
+                            <label for="name" class="form__label">Nombres</label>
+                            <span class="form__line"></span>
+                        </article>
+                        <article class="form-group">
+                            <input 
+                                class="form__input"
+                                type="text"
+                                name="Apellidos"
+                                id="Apellidos"
+                                placeholder=" "
+                                autocomplete="family-name"
+                                required
+                            > 
+                            <label for="Apellidos" class="form__label">Apellidos</label>
+                            <span class="form__line"></span>
+                        </article>
+                        <article class="form-group">
+                            <input 
+                                class="form__input"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder=" "
+                                autocomplete="email"
+                                required
+                            > 
+                            <label for="email" class="form__label">Correo electrónico</label>
+                            <span class="form__line"></span>
+                        </article>
+                        <article class="form-group">
+                            <input 
+                                class="form__input"
+                                type="text"
+                                name="Dirección"
+                                id="Dirección"
+                                placeholder=" "
+                                autocomplete="on"
+                                required
+                            > 
+                            <label for="Dirección" class="form__label">Dirección</label>
+                            <span class="form__line"></span>
+                        </article>
+                        <article class="form-group">
+                            <input 
+                                class="form__input"
+                                type="tel"
+                                name="Teléfono"
+                                id="Teléfono"
+                                placeholder=" "
+                                autocomplete="on"
+                                required
+                            > 
+                            <label for="Teléfono" class="form__label">Teléfono</label>
+                            <span class="form__line"></span>
+                        </article>
+                    
+                        
+                    </article>    
+                                    
+                    </form>
+                <article class="btn-cerrar">
+                    <label for="btn-modal">Guardar</label>
+                    <label for="btn-modal">Cancelar</label>
+                </article>
+            </span>
+            <label for="btn-modal" class="cerrar-modal"></label>
+        </article>
+
+
+          <!-- footer del dash -->
+          <footer>
+            <ul class="footer-items">
+                <li>
+                    <a href="">Privacidad</a>
+                </li>
+                <li>
+                    <a href="">Condiciones</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>

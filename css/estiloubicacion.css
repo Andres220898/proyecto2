@@ -1,18 +1,24 @@
-body{
+* {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-image: url(Imagenes/fondoubi.jpg);
-    background-size: cover;
+    box-sizing: border-box;
 }
 
-header{
-    background: #ac11119d;
+body {
+    background-image: url(Imagenes/imagen.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0; /* Añadimos margen cero */
+    padding: 0; /* Añadimos padding cero */
+}
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
     width: 100%;
     clear: both;
     content: "";
     display: table;
-    border-radius: 20px;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
 }
 .menu{ 
     width: 900px;
@@ -41,7 +47,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de lestra de los menus*/
     text-decoration: none;
-    color: #e9e3e3;
+    color: #444;
     font-weight: bold;
 }
 
@@ -74,25 +80,30 @@ nav ul li a:hover::before{
     justify-content: center;
     display: flex;
 }
-footer{ /*Colores de pie de pagina */
+footer {
     display: flex;
     background: #d1a205;
-    padding: 10px 0 10px 0;
-    margin: auto;
-    overflow: hidden;
+    padding: 10px 0;
     width: 100%;
-    height: 100%;
+    position: absolute;
+    bottom: 0; /* Anclamos el footer al final de la página */
 }
 
-.sec1{ /*Estilo de pie de pagina */
+.sec1 {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
-
+    margin: auto;
 }
 
-.part1{ /*Sentido de ubicacion de pie de pagina */
+.part1 {
     text-align: center;
+}
+
+.part2 {
+    color: #080606;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .part2{ /*Diseño de letra de pie de pagina */

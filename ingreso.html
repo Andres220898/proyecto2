@@ -10,10 +10,10 @@
 <body>
     <header>
         <div class="menu">
-           <a href="landing.html"> <img src="css/Imagenes/icono.png" alt=""></a>
+           <a href="index.html"> <img src="css/Imagenes/icono.png" alt=""></a>
             <nav>
                 <ul>
-                    <li><a href="landing.html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="Contacto.html">Contacto</a></li>
                     <li><a href="quienessomos.html">Quienes Somos</a></li>
                     <li><a href="Ubicacion.html">Ubicacion</a></li>
@@ -22,33 +22,24 @@
         </div>
     </header>
 
-    <div class="login">
-        <b><h2>Inicio de sesión</h2></b>
-        <form id="login-form">
-            <div class="uso-box">
-                <input type="text" name="usuario" required>
-                <label>Usuario</label>
-            </div>
-            <div class="uso-box">
-                <input type="password" name="contraseña" required>
-                <label>Contraseña</label>
-            </div>
-            <button type="submit" class="login-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Ingresar
-                </button>
+    <section class="form-register">
+        <h4>Iniciar Sesion</h4>
+        <form id="registration-form">
+            <input class="controls" type="text" name="apellidos" placeholder="Ingrese su Usuario   " required>
+            <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña" required>
+            
+            
+            <button type="submit">
+                <span></span>
+                <b>Ingresar</b>
+            </button>
+            <br>    
             <br>
-            <b>
-                <a href="registro.html">Crear Cuenta</a>
-                <br>
-                <a href="error500.html">Recuperar Contraseña</a>
-            </b>
+            <a href="registro.html">Crear Cuenta</a>
+            <br>
+            <a href="error500.html">Recuperar Contraseña</a>
         </form>
-    </div>
-
+    </section>
     <script>
         document.querySelector('.login-button').addEventListener('click', function(event) {
             event.preventDefault(); // Evita el comportamiento predeterminado del enlace

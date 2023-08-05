@@ -18,7 +18,7 @@ header{
     clear: both;
     content: "";
     display: table;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .menu{ 
     width: 900px;
@@ -47,7 +47,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de letra de los menus*/
     text-decoration: none;
-    color: #f5ecec;
+    color: #444;
     font-weight: bold;
 }
 
