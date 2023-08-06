@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /*    background: linear-gradient(135deg, #ff634750, #ffa60081, #c5c51e5e);     */
+
 }
 
 header {
@@ -30,11 +32,15 @@ img{ /* Estilo de imagen de menu */
 nav{
     float: right;
 }
+nav ul{
+    display: flex;
+    align-items: center;
+}
 
 nav ul li { /*Estilo de ubicacion de los menus */
     list-style: none;
-    margin-left: 100px;
-    padding: 15px 0;
+    margin-left: 70px;
+    padding: 1px 0;
     float: left;
     position: relative;
 }
@@ -45,6 +51,48 @@ nav ul li a { /* Estilo de lestra de los menus*/
     font-weight: bold;
 }
 
+nav ul li .comp-icon {
+    margin-left: 30px;
+    color: #968181;
+    font-size: 27px;
+    width: 40px; /* Tamaño del círculo */
+    height: 40px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Color de fondo del círculo */
+    position: relative;
+}
+nav ul li .comp-icon .counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ad2e0f;
+    color: #fff;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Nos ayuda a poner invisible el contador*/
+.comp-icon .counter.hidden {
+    display: none;
+}
+/* Muestra el contador cuando se selcciona un producto*/
+.comp-icon .counter.visible {
+    display: flex;
+}
+nav ul li .comp-icon:hover {
+    background-color: #968181; /* Cambia el color de fondo al hacer hover */
+    color: #fff; /* Cambia el color del ícono al hacer hover */
+}
+nav ul li .comp-icon:hover::before {
+    width: 0; /* Anula la barra encima del ícono de carrito al hacer hover */
+}
 nav ul li a::before{
     display: block;
     content: "";
@@ -59,14 +107,39 @@ nav ul li a::before{
 nav ul li a:hover::before{
     width: 100%;
 }
+.search-bar {
+    display: flex;
+    justify-content: right; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+#search {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #44444431;
+}
+
+#search-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* Catálogo de productos */
 .catalogo {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Creacion de columnas */
+    gap: 10px; /* Espacio entre elementos */
     padding: 20px;
-}
+    justify-items: center;} /* Centrar las tarjetas */
 
 .producto {
     background-color: #f9f9f9;
@@ -75,6 +148,9 @@ nav ul li a:hover::before{
     margin: 10px;
     text-align: center;
     width: 300px;
+    box-shadow: 7px 13px 20px #0e0101; /* Sombra de tarjetas*/
+    border-radius: 10px;
+
 }
 
 .producto img {
@@ -87,7 +163,7 @@ nav ul li a:hover::before{
 }
 
 .producto p {
-    color: #777;
+    color: #000;
     margin-top: 5px;
 }
 
@@ -98,10 +174,16 @@ nav ul li a:hover::before{
     padding: 5px 15px;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 5px;
+}
+.producto button:hover{
+    background-color: #b37632;
+    color: #f7f3f3;
+    font-size: 20px;
 }
 
 footer {
-    position: absolute;
+    position:grid;
     bottom: 0;
     display: flex;
     background: #d1a205;

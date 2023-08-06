@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="css/estilocata.css">
+    <link rel="shortcut icon" href="css/Imagenes/icono.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fbf50badbe.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -16,38 +19,47 @@
                     <li><a href="Contacto.html">Contacto</a></li>
                     <li><a href="quienessomos.html">Quienes Somos</a></li>
                     <li><a href="Ubicacion.html">Ubicacion</a></li>
+                    <li><a href="#  " class="comp-icon"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar">
+        <button id="search-button">Buscar</button>
+    </div>
 <!--Clases para el catalgo de producto-->
     <section class="catalogo">
         <div class="producto">
             <img src="css/Imagenes/pechuga.jpg" alt="Pechugas de Pollo">
             <h3>Pechugas de Pollo</h3>
             <p>Deliciosas pechugas de pollo frescas y jugosas.</p>
-            <button>Ver Detalles</button>
+            <b><P>$ 21.000 Kg</P></b>
+            <button>Agregar al Carrito</button>
         </div>
         
         <div class="producto">
             <img src="css/Imagenes/alas.jpg" alt="Alas de Pollo">
             <h3>Alas de Pollo</h3>
             <p>Crujientes alas de pollo con una variedad de salsas.</p>
-            <button>Ver Detalles</button>
+           <b><P>$ 12.000 Kg</P></b>
+           <button>Agregar al Carrito</button>
         </div>
         
         <div class="producto">
             <img src="css/Imagenes/pescado.jpg" alt="Pescado">
             <h3>Pescado Fresco</h3>
             <p>Pescado fresco y delicioso, listo para preparar.</p>
-            <button>Ver Detalles</button>
-        </div>
+        <b><P>$ 15.000 Kg</P></b>
+        <button>Agregar al Carrito</button>
+    </div>
         
         <div class="producto">
             <img src="css/Imagenes/menudencia.jpg" alt="Menudencia">
             <h3>Menudencia</h3>
             <p>Variedad de menudencia de pollo para tus platillos.</p>
-            <button>Ver Detalles</button>
+           <b><P>$ 2.000 Kg</P></b> 
+           <button>Agregar al Carrito</button>
         </div>
     </section>
 
@@ -71,5 +83,6 @@
             <h3><small>&copy;2023 <b>D-TECNO</b> - Todos los derechos reservados</small></h3>
         </div>
     </footer>
+    <script src="js/estilocarri.js"></script>
 </body>
 </html>
