@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li { /*Estilo de ubicacion de los menus */
+    list-style: none;
+    margin-left: 100px;
+    padding: 15px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a { /* Estilo de lestra de los menus*/
+    text-decoration: none;
+    color: #0e0a0a;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+/* Catálogo de productos */
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    margin-top: 10px;
+}
+
+.producto p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.producto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background: #d1a205;
+    padding: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    height: 90px;
+}
+.sec1{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.part1{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.part2{ /*Diseño de letra de pie de pagina */
+    color: #080606;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+}
