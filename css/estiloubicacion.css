@@ -39,7 +39,7 @@ nav{
 
 nav ul li { /*Estilo de ubicacion de los menus */
     list-style: none;
-    margin-left: 75px;
+    margin-left: 110px;
     padding: 15px 0;
     float: left;
     position: relative;
@@ -47,7 +47,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de lestra de los menus*/
     text-decoration: none;
-    color: #444;
+    color: #0e0a0a;
     font-weight: bold;
 }
 
@@ -65,20 +65,24 @@ nav ul li a::before{
 nav ul li a:hover::before{
     width: 100%;
 }
-.conte{ /* Diseño de contenedor principal*/
-    width: 95%;
-    max-width: 1300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+
+.visit-container {
+    text-align: center;
+    margin-top: 50px; /* Agrega un margen superior para separar la sección del encabezado del menú */
 }
-.textos{
-    color: transparent;
+
+.visit-container h2 {
+    font-size: 36px;
+    color: #0e0a0a;
+    margin-bottom: 20px; /* Espacio inferior entre el encabezado y el mapa */
 }
-.cont-ubi{
-    justify-content: center;
-    display: flex;
+
+.map-container {
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Centra horizontalmente */
 }
 footer {
     display: flex;
@@ -101,12 +105,6 @@ footer {
 }
 
 .part2 {
-    color: #080606;
-    padding-bottom: 5px;
-    margin-bottom: 1px;
-}
-
-.part2{ /*Diseño de letra de pie de pagina */
     color: #080606;
     padding-bottom: 5px;
     margin-bottom: 1px;

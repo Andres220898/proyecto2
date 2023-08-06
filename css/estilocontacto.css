@@ -12,13 +12,14 @@ body{ /*Estilo del cuerpo de la pestaña */
     background-image: url(Imagenes/portada.jpg);
     background-size: cover;
 }
-header{
-    background: #9438389d;
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
     width: 100%;
     clear: both;
     content: "";
     display: table;
     border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
 }
 .menu{ 
     width: 900px;
@@ -39,7 +40,7 @@ nav{
 
 nav ul li { /*Estilo de ubicacion de los menus */
     list-style: none;
-    margin-left: 75px;
+    margin-left: 110px;
     padding: 15px 0;
     float: left;
     position: relative;
@@ -47,7 +48,7 @@ nav ul li { /*Estilo de ubicacion de los menus */
 
 nav ul li a { /* Estilo de letra de los menus*/
     text-decoration: none;
-    color: #444;
+    color: #0a0808;
     font-weight: bold;
 }
 

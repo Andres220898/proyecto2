@@ -1,3 +1,58 @@
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 20px;
+    text-align: center; /* Centrar el texto del header */
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li { /*Estilo de ubicacion de los menus */
+    list-style: none;
+    margin-left: 90px;
+    padding: 15px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a { /* Estilo de lestra de los menus*/
+    text-decoration: none;
+    color: #0e0a0a;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
 /*Daremos tamaño a la pagina que nos quede de color blanca y el tipo de letra */
 .page_404{
     padding: 50px 0 ;

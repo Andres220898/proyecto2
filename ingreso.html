@@ -24,25 +24,29 @@
 
     <section class="form-register">
         <h4>Iniciar Sesion</h4>
-        <form id="registration-form">
-            <input class="controls" type="text" name="apellidos" placeholder="Ingrese su Usuario   " required>
+        <form id="login-form">
+            <input class="controls" type="text" name="usuario" placeholder="Ingrese su Usuario" required>
             <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña" required>
             
-            
-            <button type="submit">
+            <button type="submit" class="login-button">
                 <span></span>
-                <b>Ingresar</b>
+                <span></span>
+                <span></span>
+                <span></span>
+                Ingresar
             </button>
-            <br>    
             <br>
-            <a href="registro.html">Crear Cuenta</a>
-            <br>
-            <a href="error500.html">Recuperar Contraseña</a>
+            <b>
+                <a href="registro.html">Crear Cuenta</a>
+                <br>
+                <a href="error500.html">Recuperar Contraseña</a>
+            </b>
         </form>
     </section>
+
     <script>
         document.querySelector('.login-button').addEventListener('click', function(event) {
-            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            event.preventDefault(); // Evita el comportamiento predeterminado del botón
             
             var form = document.getElementById('login-form');
             var usuario = form.usuario.value;
