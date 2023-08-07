@@ -1,0 +1,234 @@
+/* Estilos generales */
+body {
+ /*Estilo del cuerpo de la pestaña */
+    background-image: url(Imagenes/portada.jpg);
+    background-size: cover;
+}
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+/* Diseño de menu */
+nav{
+    float: right;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li { /*Estilo de ubicacion de los menus */
+    list-style: none;
+    margin-left: 70px;
+    padding: 1px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a { /* Estilo de lestra de los menus*/
+    text-decoration: none;
+    color: #0e0a0a;
+    font-weight: bold;
+}
+
+nav ul li .comp-icon {
+    margin-left: 30px;
+    color: #968181;
+    font-size: 27px;
+    width: 40px; /* Tamaño del círculo */
+    height: 40px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Color de fondo del círculo */
+    position: relative;
+}
+nav ul li .comp-icon .counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ad2e0f;
+    color: #fff;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{ /*Estilo caja */
+    width: 50%;
+    max-width: 100%;
+    background: #af6e238a;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.contenedor h2{ /*Estilo de letra h2 */
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(19, 17, 0);
+    text-transform: uppercase;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.contenido .info,
+.contenido .formulario{
+    width: 90%;
+    padding-left: 25px;
+}
+
+.formulario{ /*Estilo formulario */
+padding: 10px;}
+
+.formulario input[type="text"],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #ac9595;
+    font-weight: 400;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(8, 8, 8);
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 150px;
+}
+
+.formulario input[type="text"]:focus
+.formulario textarea{
+    border: 1px solid #359978;
+}
+.pedido {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(8, 8, 8);
+}
+
+.pedido label,
+.pedido input[type="radio"],
+.pedido select {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pedido label {
+    font-weight: bold;
+}
+
+.pedido input[type="radio"] {
+    margin-right: 10px;
+}
+
+.pedido select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ac9595;
+    border-radius: 5px;
+}
+
+.pedido div {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ac9595;
+}
+
+.pedido p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#make-purchase {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#make-purchase:hover {
+    background-color: #e65a37;
+}
+
+/*Pie de pagina */
+footer {
+    bottom: 0;
+    display: flex;
+    background: #d1a205;
+    padding: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    height: 90px;
+}
+.sec1{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.part1{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.part2{ /*Diseño de letra de pie de pagina */
+    color: #080606;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+}
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .compra-seccion {
+        max-width: 90%;
+    }
+}

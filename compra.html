@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Compra</title>
+    <link rel="shortcut icon" href="css/Imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilocompra.css">
+    <script src="https://kit.fontawesome.com/fbf50badbe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+           <a href="index.html"> <img src="css/Imagenes/icono.png" alt="" ></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="Ubicacion.html">Ubicacion</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor">
+        <h2>Factura de Compra</h2>
+
+        <div class="contenido">
+            <form class="formulario">
+                <!-- Campos del formulario de compra -->
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+                <input type="text" name="correo" placeholder="Correo Electronico" id="correo" required>
+                <input type="text" name="Direccion" placeholder="Direccion" id="Direccion" required>
+                <input type="text" name="Telefono" placeholder="Telefono" id="Telefono" required>
+            </form>
+        </div>
+        <div class="pedido">
+            <label for="delivery">¿Desea domicilio?</label>
+                <input type="radio" name="delivery" value="si" required> Sí
+                <input type="radio" name="delivery" value="no" required> No
+                <label for="payment-method">Método de Pago:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Seleccione</option>
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="nequi">Nequi</option>
+                    <option value="daviPlata">Davi Plata</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+                <div>
+                    <p>Cantidad de productos: <span id="quantity"></span></p>
+                    <p>Tipo de productos: <span id="text"></span></p>
+                    <p>Valor por unidad: <span id="unit-price"></span></p>
+                    <p>Total sin envío: <span id="total-no-shipping"></span></p>
+                    <p>Total con envío: <span id="total-with-shipping"></span></p>
+                    <button type="submit" id="make-purchase" >Realizar Compra</button>
+                </div>
+        </div>
+        
+    </div>
+    <footer> <!--Pie de pagina -->
+        <div class="sec1">
+            <div class="part2">
+                <h3>Sobre Nosotros</h3>
+                <p>Convierte tu visión en una realidad digital con nosotros: <br>desarrolladores web que crean experiencias únicas y funcionales</p>
+            </div>
+            <div class="part3">
+                <h3>Siguenos</h3>
+                <div class="redsocial">
+                    <a href="https://www.facebook.com/ANDRESFRAGMENTOSMC" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/andres.sert/" class="fa fa-instagram"></a> 
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="sec2">
+            <h3><small>&copy;2023 <b>D-TECNO</b> - Todos los derechos reservados</small></h3>
+        </div>
+    </footer>
+
+</body>
+</html>
