@@ -81,6 +81,7 @@ aside {
 }
 
 aside .menu-title {
+    text-shadow: 0 0 10px #ff7b00 ;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -91,6 +92,7 @@ aside .menu-title {
 }
 
 aside .menu-logo {
+    box-shadow: 0 0 20px 8px #fc6500;
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
@@ -127,8 +129,9 @@ aside.menu-items li a {
 }
 
 aside .menu-items li:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 81, 0, 0.301);
     cursor: pointer;
+    font-size: 20px;
 }
 
 

@@ -188,13 +188,13 @@ padding: 10px;}
 
 /*Pie de pagina */
 footer {
+    position: absolute;
     bottom: 0;
     display: flex;
     background: #d1a205;
     padding: 10px 0;
     width: 100%;
     overflow: hidden;
-    height: 90px;
 }
 .sec1{ /*Estilo de pie de pagina */
     display: flex;
