@@ -54,7 +54,7 @@ nav ul li a {
     text-decoration: none;
     color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
     font-weight: bold;
-    font-size: 15px; /* Aumentar el tamaño de la letra */
+    font-size: 16px; /* Aumentar el tamaño de la letra */
     text-align: center;
     padding: 0 20px 0 20px;
 }
@@ -109,6 +109,25 @@ nav ul li a:hover::before {
 .controls::placeholder {
     color: #e63904; /* Color amarillo suave para el placeholder */
     text-align: center;
+}
+.form-register .password-wrapper input[type="password"] {
+    padding-right: 30px; /* Ajusta este valor según sea necesario */
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper i {
+    position: absolute;
+    padding-left: 10px;
+    top: 50%;
+    right: 10px;
+    transform:translateY(-120%);
+    cursor: pointer;
+    color: #050404;
 }
 
 .form-register input[type="text"]::placeholder,
@@ -177,7 +196,48 @@ nav ul li a:hover::before {
         transparent, #da680b);
     animation: btn-anim1 1s linear infinite;
 }
+.iniciofg {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10px;
+}
 
+.socialiniciof{
+    margin-top: 5px;
+}
+
+.socialiniciof a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3b5998;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    transition: background-color 0.3s ease    
+}
+.socialiniciof a:hover {
+    background-color: #0e4dd4;
+    color: #050404;
+}
+.socialiniciog{
+    margin-top: 5px;
+}
+
+.socialiniciog a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e00f0f;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    transition: background-color 0.3s ease    
+}
+.socialiniciog a:hover {
+    background-color: #d4570e;
+    color: #050404;
+}
 
 @keyframes btn-anim1{
     0%{

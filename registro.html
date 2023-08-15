@@ -24,7 +24,7 @@
     </header>
     <section class="form-register">
         <h4>Formulario Registro</h4>
-        <form id="registration-form">
+        <form id="registration-form" action="registro.php" method="post">            
             <input class="controls" type="text" name="nombres" placeholder="Ingrese su Nombre" required>
             <input class="controls" type="text" name="apellidos" placeholder="Ingrese su Apellido" required>
             <input class="controls" type="number" name="identificacion" placeholder="Ingrese numero de identificacion" required>
@@ -48,8 +48,8 @@
             <a href="ingreso.html">¿Ya tienes cuenta?</a>
         </form>
     </section>
-    
-    <script>
+    <!--
+   <script>
         document.getElementById('registration-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Evitamos el ingreso en blanco
             
@@ -63,6 +63,7 @@
                 alert('Por favor, complete todos los campos obligatorios');
             }
         });
-    </script>
+    </script> 
+-->
 </body>
 </html>
