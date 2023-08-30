@@ -183,7 +183,6 @@ nav ul li a:hover::before{
 }
 
 footer {
-    position:absolute;
     bottom: 0;
     display: flex;
     background: #d1a205;

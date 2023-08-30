@@ -1,10 +1,26 @@
+* {
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Imagenes/fondoquie.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el alto de la ventana */
+
+}/*Modificamos el menu */
 header {
     background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
     width: 100%;
     clear: both;
     content: "";
     display: table;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center; /* Centrar el texto del header */
 }
 .menu{ 
@@ -26,7 +42,7 @@ nav{
 
 nav ul li { /*Estilo de ubicacion de los menus */
     list-style: none;
-    margin-left: 90px;
+    margin-left: 44px;
     padding: 15px 0;
     float: left;
     position: relative;
@@ -52,29 +68,70 @@ nav ul li a::before{
 nav ul li a:hover::before{
     width: 100%;
 }
-
-/*Daremos tamaño a la pagina que nos quede de color blanca y el tipo de letra */
-.page_404{
-    padding: 50px 0 ;
-    background: #fff;
-    font-family: "Arvo", serif;
-}
-.page_404 img{width: 100%;}
-.four_zero_four_bg{
-    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif); /*Ests parte es el gif del cavernicola */
-    height: 400px;
-    background-position: center;
-}
-.four_zero_four_bg h1{
-    font-size: 70px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-/*Daremos color al boton del enlace */
-.link_404{
-    color: #fff !important;
-    padding: 10px 20px;
-    background: #eb9b08;
-    margin: 20px 0;
-    display: inline-block;}
-.contant_box_404{
-    margin-top: -50px;}
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.mision, .vision {
+    background-color: #ffffffd2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mision:hover, .vision:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #0d0e0d;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.mision {
+    flex: 1;
+}
+
+.vision {
+    flex: 1;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background: #d1a205;
+    padding: 10px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.sec1{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.part1{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.part2{ /*Diseño de letra de pie de pagina */
+    color: #080606;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+}

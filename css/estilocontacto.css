@@ -38,19 +38,23 @@ nav{
     float: right;
 }
 
-nav ul li { /*Estilo de ubicacion de los menus */
+nav ul li {
     list-style: none;
-    margin-left: 110px;
-    padding: 15px 0;
+    margin-left: 35px;
+    padding: 30px 0;
     float: left;
     position: relative;
 }
 
-nav ul li a { /* Estilo de letra de los menus*/
+nav ul li a {
     text-decoration: none;
-    color: #0a0808;
+    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
     font-weight: bold;
+    font-size: 18px; /* Aumentar el tamaño de la letra */
+    text-align: center;
+    padding: 0 20px 0 20px;
 }
+
 
 nav ul li a::before{
     display: block;
@@ -173,13 +177,15 @@ nav ul li a:hover::before{
 
 .formulario input[type="text"]:focus
 .formulario textarea{
-    border: 1px solid #359978;
+    border: 1px solid #030303;
 }
 
 .formulario button{
     padding: 14px 30px;
     border: transparent;
-    background: #359978;
+    background: #FDFC47;  
+    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
+    background: linear-gradient(to right, #24FE41, #FDFC47); 
     cursor: pointer;
     float: right;
     text-transform: uppercase;
@@ -187,5 +193,5 @@ nav ul li a:hover::before{
 }
 
 .formulario button:hover{
-    background: #ac9595;
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
 }
