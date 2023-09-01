@@ -27,19 +27,15 @@ img{ /* Estilo de imagen de menu */
     padding: 0px;
     border-radius: 50%;
 }
-/* Diseño de menu */
+
 nav{
     float: right;
-}
-nav ul{
-    display: flex;
-    align-items: center;
 }
 
 nav ul li {
     list-style: none;
-    margin-left: 20px;
-    padding: 10px 0;
+    margin-left: 35px;
+    padding: 20px 0;
     float: left;
     position: relative;
 }
@@ -49,9 +45,25 @@ nav ul li a {
     text-decoration: none;
     color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
     font-weight: bold;
-    font-size: 18px; /* Aumentar el tamaño de la letra */
+    font-size: 16.5px; /* Aumentar el tamaño de la letra */
     text-align: center;
     padding: 0 20px 0 20px;
+}
+
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
 }
 
 

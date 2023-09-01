@@ -73,7 +73,30 @@ nav ul li a::before{
 nav ul li a:hover::before{
     width: 100%;
 }
+/* Estilo para el slider de imágenes */
+.slider-container {
+    padding: 20px;
+    width: 35%;
+    position: relative;
+    left: 900px;
+    height: 200px;
+    margin-bottom: 0;
+}
+  
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+  
+.swiper-slide img {
+    border: solid 2px #080606;
+    width: 88%;
+    height: 98%;
+    object-fit: cover;
+    border-radius: 20PX;
+    box-shadow: 5px 5px 5px #000;
 
+}
 footer {
     position: absolute;
     bottom: 0;

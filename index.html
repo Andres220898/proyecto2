@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="css/Imagenes/icono.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/fbf50badbe.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fbf50badbe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     
 </head>
 <body>
@@ -39,7 +41,17 @@
 <div class="comp-button">
             <a href="catalogo.html"><i class="fas fa-shopping-cart"></i></a>
 </div>
-
+<div class="slider-container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="css/Imagenes/alas.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="css/Imagenes/pechuga.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="css/Imagenes/menudencia.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="css/Imagenes/pierna_pernil.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  
   
     <footer> <!--Pie de pagina -->
         <div class="sec1">
@@ -50,8 +62,8 @@
             <div class="part3">
                 <h3>Siguenos</h3>
                 <div class="redsocial">
-                    <a href="https://www.facebook.com/ANDRESFRAGMENTOSMC" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/andres.sert/" class="fa fa-instagram"></a> 
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a> 
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-youtube"></a>
                 </div>
@@ -61,5 +73,18 @@
             <h3><small>&copy;2023 <b>D-TECNO</b> - Todos los derechos reservados</small></h3>
         </div>
     </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  // Inicializa el Swiper
+  var swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal', // Dirección vertical
+    loop: true, // Repetir el slide
+    autoplay: {
+      delay: 3000, // Tiempo de espera entre imágenes en milisegundos
+    },
+  });
+</script>
+
 </body>
 </html> 
