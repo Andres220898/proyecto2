@@ -98,9 +98,9 @@ nav ul li .comp-icon .counter {
 .contenedor{ /*Estilo caja */
     width: 50%;
     max-width: 100%;
-    background: #fdc6305e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b16037ab, #c0a14b);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e6794294, #e2b947); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fdc6305e;  
+    background: -webkit-linear-gradient(to right, #b16037ab, #c0a14b);  
+    background: linear-gradient(to right, #e6794294, #e2b947); 
     padding: 40px;
     margin: 20px auto;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, .5);
@@ -117,9 +117,9 @@ nav ul li .comp-icon .counter {
     margin-bottom: 25px;
     color: rgb(19, 17, 0);
     text-transform: uppercase;
-    background: #FDC830;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FDC830;  
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  
+    background: linear-gradient(to right, #F37335, #FDC830); 
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
@@ -159,7 +159,7 @@ padding: 10px;}
     margin-top: 30px;
     padding: 20px;
     border-radius: 10px;
-    background: #FDC830;  /* fallback for old browsers */
+    background: #FDC830; 
     background: -webkit-linear-gradient(to right, #F37335, #FDC830); 
     background: linear-gradient(to right, #F37335, #FDC830); 
     box-shadow: 0px 5px 8px rgb(8, 8, 8);
