@@ -321,3 +321,20 @@ nav ul li a:hover::before {
     color: #d16711;
     text-decoration: underline;
 }
+.login-form, border-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,#171618,#fcc23f);
+    animation: animate-border-top 2s linear infinite;
+}
+@keyframes animate-border-top{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}

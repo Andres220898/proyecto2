@@ -23,7 +23,7 @@ header {
 
 img{ /* Estilo de imagen de menu */
     width: 120px;
-    height: 70px;
+    height: 80px;
     float: left;
     padding: 0px;
     border-radius: 50%;
@@ -35,12 +35,13 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
+
 }
 
 nav ul li { /*Estilo de ubicacion de los menus */
     list-style: none;
-    margin-left: 70px;
-    padding: 1px 0;
+    margin-left: 50px;
+    padding: 10px 0;
     float: left;
     position: relative;
 }
@@ -52,7 +53,7 @@ nav ul li a { /* Estilo de lestra de los menus*/
 }
 
 nav ul li .comp-icon {
-    margin-left: 30px;
+    margin-left: 20px;
     color: #968181;
     font-size: 27px;
     width: 40px; /* Tamaño del círculo */

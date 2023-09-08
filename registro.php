@@ -33,12 +33,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Ejecuta la consulta SQL y maneja los resultados
     if ($conn->query($sql) === TRUE) { // el operador -> se usa para acceder a las propiedades de un metodo
-        echo "Registro exitoso"; // Muestra un mensaje de éxito si la consulta se ejecuta correctamente
+        echo "
+        <script language='JavaScript'>
+        alert('Registro exitoso');
+        location.assign('ingreso.html');
+        </script>"; // Muestra un mensaje de éxito si la consulta se ejecuta correctamente
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error; // Muestra un mensaje de error si la consulta falla
     }
 
     // Cierra la conexión a la base de datos
     $conn->close();
+    //mysqli_error($conn);
 }
 ?>

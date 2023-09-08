@@ -165,11 +165,15 @@ padding: 10px;}
     box-shadow: 0px 5px 8px rgb(8, 8, 8);
 }
 
-.pedido label,
-.pedido input[type="radio"],
-.pedido select {
+.pedido label{
     margin-bottom: 20px;
     display: block;
+    text-align: center;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830); 
+    background: linear-gradient(to right, #F37335, #FDC830); 
+    box-shadow: 0px 2px 3px rgb(8, 8, 8);
+    font-size: 25px;
 }
 
 
@@ -179,13 +183,16 @@ padding: 10px;}
 
 .pedido input[type="radio"] {
     margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .pedido select {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ac9595;
-    border-radius: 5px;
+    border: 2px solid #ad5656;
+    border-radius: 10px;
+    font-size: 15px;
 }
 
 .pedido div {
@@ -196,20 +203,21 @@ padding: 10px;}
 
 .pedido p {
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 #make-purchase {
-    display: block;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-left: 30px;
     padding: 10px 20px;
     background-color: #ff6347;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
     box-shadow: 4px 4px 8px rgb(8, 8, 8);
+    text-decoration: none;
 
 }
 
@@ -227,7 +235,7 @@ footer {
     padding: 10px 0;
     width: 100%;
     overflow: hidden;
-    height: 90px;
+    height: 100px;
 }
 .sec1{ /*Estilo de pie de pagina */
     display: flex;

@@ -40,21 +40,26 @@
             <label for="delivery">¿Desea domicilio?</label>
                 <input type="radio" name="delivery" value="si" required> Sí
                 <input type="radio" name="delivery" value="no" required> No
-                <label for="payment-method">Método de Pago:</label>
-                <select id="payment-method" name="payment-method" required>
-                    <option value="">Seleccione</option>
-                    <option value="tarjeta">Tarjeta de Crédito</option>
-                    <option value="nequi">Nequi</option>
-                    <option value="daviPlata">Davi Plata</option>
-                    <option value="efectivo">Efectivo</option>
-                </select>
+                    <label for="payment-method">Método de Pago:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">Seleccione</option>
+                        <option value="tarjeta">Tarjeta de Crédito</option>
+                        <option value="nequi">Nequi</option>
+                        <option value="daviPlata">Davi Plata</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
                 <div>
                     <p>Cantidad de productos: <span id="quantity"></span></p>
                     <p>Tipo de productos: <span id="text"></span></p>
                     <p>Valor por unidad: <span id="unit-price"></span></p>
                     <p>Total sin envío: <span id="total-no-shipping"></span></p>
                     <p>Total con envío: <span id="total-with-shipping"></span></p>
-                    <button type="submit" id="make-purchase" >Realizar Compra</button>
+                </div>
+                    <div class="confirCompra">
+                    <a href="#" type="submit" id="make-purchase" >Realizar Compra</a>
+                    <a href="catalogo.html" type="submit" id="make-purchase"  >Seguir Comprando</a>
+                    <a href="#" type="submit" id="make-purchase" >Cancelar Compra</a>
+
                 </div>
         </div>
         

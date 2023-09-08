@@ -113,10 +113,10 @@ nav ul li a:hover::before {
 
 .form-register input[type="text"]::placeholder,
 .form-register input[type="email"]::placeholder,
-.form-register input[type="password"]::placeholder {
-    color: #050404; /* Color rojo suave para los placeholders de inputs */
+.form-register input[type="password"]::placeholder,
+.form-register input[type="number"]::placeholder {
+    color: #070606; /* Color rojo suave para los placeholders de inputs */
 }
-
 .form-register button {
     color: white;
     text-decoration: none;
@@ -234,8 +234,7 @@ nav ul li a:hover::before {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,
-        transparent, #da680b);
+    background: linear-gradient(360deg, transparent, #da680b);
     animation: btn-anim4 1s linear infinite;
     animation: .75s;
 }
