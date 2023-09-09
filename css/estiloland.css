@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(Imagenes/imagen.jpg);
+    background-image: url(Imagenes/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -81,6 +81,8 @@ nav ul li a:hover::before{
     left: 900px;
     height: 200px;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
   
 .swiper-container {

@@ -98,11 +98,11 @@ nav ul li a:hover::before {
 
 .controls {
     width: 100%;
-    background: linear-gradient(135deg, #FF6347, #FFA500, #dfdf16); 
+    background: #fff; 
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 26px;
-    border: 1px solid #e08002;
+    border: 3px solid #e08002;
     font-family: 'calibri';
     font-size: 18px;
     color: rgb(7, 6, 6);
@@ -141,7 +141,7 @@ nav ul li a:hover::before {
 .form-register button {
     color: white;
     text-decoration: none;
-    background: transparent;
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
 }
 
 .form-register a {
@@ -165,7 +165,7 @@ nav ul li a:hover::before {
 
 .form-register button:hover {
     color: #da680b;
-    color: #fff;
+    color: #070707;
     border-radius: 20px;
     box-shadow: 0 0 5px #da680b,
                 0 0 25px #da680b,
