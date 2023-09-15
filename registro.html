@@ -19,7 +19,6 @@
                     <li><a href="quienessomos.html">Quienes Somos</a></li>
                     <li><a href="Ubicacion.html">Ubicacion</a></li>
                     <li><a href="ingreso.html">Ingreso</a></li>
-
                 </ul>
             </nav>
         </div>
@@ -27,17 +26,16 @@
     <section class="form-register">
         <h4>Formulario Registro</h4>
         <form id="registration-form" action="registro.php" method="post">            
-            <input class="controls" type="text" name="nombres" placeholder="Ingrese su Nombre" required>
-            <input class="controls" type="text" name="apellidos" placeholder="Ingrese su Apellido" required>
-            <input class="controls" type="number" name="identificacion" placeholder="Ingrese numero de identificacion" required>
+            <input class="controls" type="text" name="nombre_apellido" placeholder="Ingrese su Nombre y Apellido" required>
+            <input class="controls" type="number" name="identificacion" placeholder="Ingrese número de identificación" required>
             <input class="controls" type="email" name="correo" placeholder="Ingrese su Correo" required>
-            <input class="controls" type="number" name="celular" placeholder="Ingrese numero de celular" required>
+            <input class="controls" type="number" name="celular" placeholder="Ingrese número de celular" required>
             <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña" required>
             <input class="controls" type="password" name="rcontraseña" placeholder="Repita contraseña" required>
             
             <div class="term-condiciones">
                 <input type="checkbox" name="terminos" id="terminos" required>
-                <label for="terminos">Acepto los terminos y condiciones</label>
+                <label for="terminos">Acepto los términos y condiciones</label>
                 <p></p>
             </div>
             
@@ -50,22 +48,5 @@
             <a href="ingreso.html">¿Ya tienes cuenta?</a>
         </form>
     </section>
-    <!--
-   <script>
-        document.getElementById('registration-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evitamos el ingreso en blanco
-            
-            var form = event.target;
-            
-            if (form.checkValidity()) {
-                // Si el formulario es válido, redirige a la página de ingreso, asi evitamos el uso de u a href
-                window.location.href = 'ingreso.html';
-            } else {
-                // Si no ingresa los datos completos.
-                alert('Por favor, complete todos los campos obligatorios');
-            }
-        });
-    </script> 
--->
 </body>
 </html>

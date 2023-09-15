@@ -27,25 +27,17 @@
 
     <section class="form-register">
         <h4>Iniciar Sesion</h4>
-        <form id="login-form">
+        <form action="ingresoU.php" method="POST" id="login-form">
             <div class="box">
                 <span class="border-top"></span>
                 <span class="border-right"></span>
                 <span class="border-bottom"></span>
                 <span class="border-left"></span>
 
-                    <input class="controls" type="text" name="usuario" placeholder="Ingrese su Usuario" required>
+                    <input class="controls" type="email" name="correo" placeholder="Ingrese su Correo" required>
                 <div class="password-wrapper">
                     <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña" required>
                     <i class="fas fa-eye" id="vPassword"></i> <!-- Icono de "ojo" para mostrar/ocultar la contraseña -->
-                </div>
-                <div class="iniciofg">
-                    <div class="socialiniciof"> 
-                        <a href="#" class="fa fa-facebook"></a>
-                    </div>
-                    <div class="socialiniciog"> 
-                        <a href="#" class="fa fa-google"></a>
-                    </div>
                 </div>
             </div>
             <button type="submit" class="login-button">
@@ -77,26 +69,6 @@
                 passwordInput.type = 'password';
                 vPasswordIcon.classList.remove('fa-eye-slash');
                 vPasswordIcon.classList.add('fa-eye');
-            }
-        });
-        
-        document.querySelector('.login-button').addEventListener('click', function(event) {
-            event.preventDefault(); // Evita el comportamiento predeterminado del botón
-            
-            var form = document.getElementById('login-form');
-            var usuario = form.usuario.value;
-            var contraseña = form.contraseña.value;
-            
-            // Realiza acciones adicionales con los datos ingresados
-            // Por ejemplo, puedes validar los campos o enviar una solicitud al servidor
-            
-            // Ejemplo de validación básica
-            if (form.checkValidity()) {
-                // Si las credenciales son válidas, redirige a otra página
-                window.location.href = 'dashboard.html';
-            } else {
-                // Si las credenciales no son válidas, muestra un mensaje de error
-                alert('Usuario o contraseña incorrectos');
             }
         });
     </script>

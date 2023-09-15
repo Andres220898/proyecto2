@@ -6,44 +6,63 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost"; // Dirección del servidor de la base de datos
     $username = "root"; // Nombre de usuario para acceder a la base de datos
     $password = ""; // Contraseña para acceder a la base de datos
-    $dbname = "registroU"; // Nombre de la base de datos a utilizar
+    $dbname = "appvicola2"; // Nombre de la base de datos a utilizar
 
     // Crea una conexión a la base de datos MySQL
-    $conn = new mysqli($servername, $username, $password, $dbname); // en este caso el new se usa para crear una instancia para conectar la base de datos con el codigo
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Verifica si la conexión a la base de datos tiene errores
     if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error); // Termina el script y muestra el mensaje de error (mediante el die es una forma de ahorrar la linea de echo)
+        die("Conexión fallida: " . $conn->connect_error);
     }
 
-    /* valida los datos recibidos del formulario para prevenir inyección SQL es decir mysqli_real_escape_string 
-    se usa de manera predefinida para carecteres especiales que no interfieran con una consulta, ya sea comillas o comas */
-    $nombre = mysqli_real_escape_string($conn, $_POST["nombres"]); 
-    $apellido = mysqli_real_escape_string($conn, $_POST["apellidos"]);
-    $identificacion = mysqli_real_escape_string($conn, $_POST["identificacion"]);
-    $correo = mysqli_real_escape_string($conn, $_POST["correo"]);
-    $celular = mysqli_real_escape_string($conn, $_POST["celular"]);
+// Obtén el valor del campo combinado "nombre_apellido"
+$nombre_apellido = mysqli_real_escape_string($conn, $_POST["nombre_apellido"]);
 
-    /* Genera un hash seguro de la contraseña ingresada por el usuario es decir cifra la contraseña 
-    se debe validar con el profe eduer si se puede usar o no */
-    $contraseña = password_hash($_POST["contraseña"], PASSWORD_DEFAULT);
+// Divide el valor en nombre y apellido
+$parts = explode(" ", $nombre_apellido);
 
-    // Construye la consulta SQL para insertar datos en la tabla de usuarios
-    $sql = "INSERT INTO usuarios (nombre, apellido, identificacion, correo, celular, contraseña) VALUES ('$nombre', '$apellido', '$identificacion', '$correo', '$celular', '$contraseña')";
+// Inicializa las variables para nombre y apellido
+$primer_nombre = '';
+$segundo_nombre = '';
+$primer_apellido = '';
+$segundo_apellido = '';
+
+// Verifica cuántas partes se dividieron
+if (count($parts) >= 1) {
+    $primer_nombre = $parts[0]; // La primera parte es el primer nombre
+}
+if (count($parts) >= 2) {
+    $segundo_nombre = $parts[1]; // La segunda parte es el segundo nombre
+}
+if (count($parts) >= 3) {
+    $primer_apellido = $parts[2]; // La tercera parte es el primer apellido
+}
+if (count($parts) >= 4) {
+    $segundo_apellido = $parts[3]; // La cuarta parte es el segundo apellido
+}
+
+// Obtén los demás campos del formulario
+$identificacion = mysqli_real_escape_string($conn, $_POST["identificacion"]);
+$correo = mysqli_real_escape_string($conn, $_POST["correo"]);
+$celular = mysqli_real_escape_string($conn, $_POST["celular"]);
+$contraseña = mysqli_real_escape_string($conn, $_POST["contraseña"]); //, PASSWORD_DEFAULT
+
+// Construye la consulta SQL para insertar datos en la tabla de usuarios
+$sql = "INSERT INTO persona (primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, documento, correo, celular, contraseña) VALUES ('$primer_nombre', '$segundo_nombre', '$primer_apellido', '$segundo_apellido', '$identificacion', '$correo', '$celular', '$contraseña')";
 
     // Ejecuta la consulta SQL y maneja los resultados
-    if ($conn->query($sql) === TRUE) { // el operador -> se usa para acceder a las propiedades de un metodo
+    if ($conn->query($sql) === TRUE) {
         echo "
         <script language='JavaScript'>
         alert('Registro exitoso');
         location.assign('ingreso.html');
-        </script>"; // Muestra un mensaje de éxito si la consulta se ejecuta correctamente
+        </script>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error; // Muestra un mensaje de error si la consulta falla
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     // Cierra la conexión a la base de datos
     $conn->close();
-    //mysqli_error($conn);
 }
 ?>
