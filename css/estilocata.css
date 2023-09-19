@@ -8,24 +8,25 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);
     width: 100%;
     clear: both;
     content: "";
-    display: table;
+    display: block; /* Cambia a bloque para ocupar todo el ancho */
     border-radius: 10px;
-    text-align: center; /* Centrar el texto del header */
+    text-align: center; /* Centra horizontalmente los elementos */
 }
-.menu{ 
-    width: 900px;
-    margin: 0 auto;
+.menu {
+    width: 100%; /* Ocupa todo el ancho del encabezado */
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Espaciado interno para los elementos del menú */
 }
 
 img{ /* Estilo de imagen de menu */
-    width: 120px;
-    height: 80px;
-    float: left;
-    padding: 0px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -40,10 +41,12 @@ nav ul{
 
 nav ul li { /*Estilo de ubicacion de los menus */
     list-style: none;
-    margin-left: 50px;
+    margin-left: 70px;
+    margin-right: 40px;
     padding: 10px 0;
     float: left;
     position: relative;
+    font-size: 20px;
 }
 
 nav ul li a { /* Estilo de lestra de los menus*/

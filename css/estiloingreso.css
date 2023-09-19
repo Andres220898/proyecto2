@@ -16,56 +16,60 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);
     width: 100%;
     clear: both;
     content: "";
-    display: table;
+    display: block; /* Cambia a bloque para ocupar todo el ancho */
     border-radius: 10px;
-    text-align: center; /* Centrar el texto del header */
+    text-align: center; /* Centra horizontalmente los elementos */
 }
 
 .menu {
-    width: 900px;
-    margin: 0 auto;
+    width: 100%; /* Ocupa todo el ancho del encabezado */
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Espaciado interno para los elementos del menú */
 }
 
 img {
-    width: 120px;
-    height: 70px;
-    float: left;
-    padding: 0px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
 nav {
-    float: right;
+    display: flex; /* Alinea los elementos de navegación en línea */
+    align-items: center; /* Centra verticalmente los elementos de navegación */ 
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Alinea los elementos de navegación en línea */
 }
 
 nav ul li {
     list-style: none;
-    margin-left: 35px;
-    padding: 30px 0;
+    margin-left: 110px;
+    margin-right: 40px;
+    padding: 10px 0;
     float: left;
     position: relative;
 }
 
-
 nav ul li a {
     text-decoration: none;
-    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
+    color: rgb(10, 8, 8);
     font-weight: bold;
-    font-size: 18px; /* Aumentar el tamaño de la letra */
-    text-align: center;
-    padding: 0 20px 0 20px;
+    font-size: 20px;
 }
-
 
 nav ul li a::before {
     display: block;
     content: "";
     width: 0%;
-    background: rgb(7, 6, 6); /* Cambiar el color del subrayado a blanco */
+    background: #444;
     height: 5px;
     top: 0;
     position: absolute;
@@ -74,6 +78,7 @@ nav ul li a::before {
 
 nav ul li a:hover::before {
     width: 100%;
+    
 }
 
 .form-register {
