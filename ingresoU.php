@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script>alert('Usuario no encontrado');location.assign('ingreso.html')</script>";
     }
 
-    // Cierra la conexión a la base de datos
+    // Cierra la conexión a la base de datos  
     $conn->close();
 }
 ?>

@@ -46,10 +46,11 @@ if (count($parts) >= 4) {
 $identificacion = mysqli_real_escape_string($conn, $_POST["identificacion"]);
 $correo = mysqli_real_escape_string($conn, $_POST["correo"]);
 $celular = mysqli_real_escape_string($conn, $_POST["celular"]);
+$direccion = mysqli_real_escape_string($conn, $_POST["direccion"]);
 $contraseña = mysqli_real_escape_string($conn, $_POST["contraseña"]); //, PASSWORD_DEFAULT
 
-// Construye la consulta SQL para insertar datos en la tabla de usuarios
-$sql = "INSERT INTO persona (primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, documento, correo, celular, contraseña) VALUES ('$primer_nombre', '$segundo_nombre', '$primer_apellido', '$segundo_apellido', '$identificacion', '$correo', '$celular', '$contraseña')";
+// Construye la consulta SQL para insertar datos en la tabla de persona
+$sql = "INSERT INTO persona (primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, documento, correo, celular, contraseña,direccion) VALUES ('$primer_nombre', '$segundo_nombre', '$primer_apellido', '$segundo_apellido', '$identificacion', '$correo', '$celular', '$contraseña','$direccion')";
 
     // Ejecuta la consulta SQL y maneja los resultados
     if ($conn->query($sql) === TRUE) {
