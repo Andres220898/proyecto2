@@ -1,0 +1,16 @@
+https://josejuansanchez.org/bd/ejercicios-consultas-sql/index.html#gesti%C3%B3n-de-empleados
+
+https://josejuansanchez.org/bd/unidad-06-teoria/index.html#consultas-multitabla-sql-1
+
+https://www.sqlite.org/lang_datefunc.html
+
+https://www.tutorialesprogramacionya.com/sqlserverya/
+https://www.tutorialesprogramacionya.com/sqlserverya/temarios/descripcion.php?cod=84&punto=78&inicio=
+https://www.tutorialesprogramacionya.com/sqlserverya/temarios/descripcion.php?cod=82&punto=&inicio=#:~:text=Para%20agregar%20una%20restricci%C3%B3n%20%22foreign%20key%22%20al%20campo%20%22codigoeditorial,codigoeditorial)%20references%20editoriales(codigo)%3B
+	
+curso
+
+
+https://conclase.net/mysql/curso/cap0
+
+https://www.youtube.com/watch?v=spMYZHepjko&ab_channel=Hixec%28AntesColddSecurity%29

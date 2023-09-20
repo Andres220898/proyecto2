@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
     <!-- stylos para el dash -->
-    <link rel="stylesheet" href="./css/dash_style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- parametros de grid en el main -->
@@ -14,11 +14,11 @@
         <!-- parametros del header y el search bar -->
         <header>
             <article class="search-container">
-                <a href="">
+                <!-- <a href="">
                     <img class="search--icon" src="./img/busqueda.png" alt="buscar" title="Buscar">
                     
                 </a>
-                <input type="search" name="Buscar" placeholder="Buscar producto, cliente, proveedor...">
+                <input type="search" name="Buscar" placeholder="Buscar producto, cliente, proveedor..."> -->
             </article>
             
             <a href="">
@@ -30,7 +30,7 @@
             <a href="">
                 <img src="img/circulo-de-usuario.png" alt="Usuario" title="Usuario">
             </a>
-            <a href="./landing.html">
+            <a href="">
                 <img src="img/logout.png" alt="Cerrar sesión" title="Cerrar sesión">
             </a>
         </header>
@@ -44,16 +44,16 @@
             <!-- items del menu -->
             <ul class="menu-items">
                 <li>
-                    <a href="./dashboard.html"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
+                    <a href="index.php"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
                            
                 </li>
                 <li>
-                    <a href="./cliente.html"><img src="./img/group_.png" alt="Clientes">Clientes</a>    
+                    <a href="cliente.php"><img src="./img/group_.png" alt="Clientes">Clientes</a>    
                            
                 </li>
                 
                 <li>
-                    <a href="./productos.html"><img src="./img/storefront_FILL0_wght400_GRAD0_opsz40.png" alt="Productos">Productos</a>
+                    <a href="productos.php"><img src="./img/storefront_FILL0_wght400_GRAD0_opsz40.png" alt="Productos">Productos</a>
                     
                 </li>
                 <li>
@@ -73,7 +73,7 @@
                     
                 </li>
                 <li>
-                    <a href=""><img src="./img/local_shipping.png" alt="Proveedores">Proveedores</a>
+                    <a href="proveedores.php"><img src="./img/local_shipping.png" alt="Proveedores">Proveedores</a>
                     
                 </li>
             </ul>

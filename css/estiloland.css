@@ -13,55 +13,53 @@ body {
     padding: 0;
     min-height: 100vh; /* Asegura que el contenido ocupe al menos el alto de la ventana */
 
-}
-/*Modificamos el menu */
+}/*Modificamos el menu */
 header {
-    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
     width: 100%;
     clear: both;
     content: "";
-    display: block; /* Cambia a bloque para ocupar todo el ancho */
+    display: table;
     border-radius: 10px;
-    text-align: center; /* Centra horizontalmente los elementos */
+    text-align: center; /* Centrar el texto del header */
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
 }
 
-.menu {
-    width: 100%; /* Ocupa todo el ancho del encabezado */
-    display: flex; /* Alinea los elementos horizontalmente */
-    justify-content: space-between; /* Espaciado uniforme entre elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 0 20px; /* Espaciado interno para los elementos del menú */
-}
-
-img {
-    width: 100px;
-    height: 100px;
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
     border-radius: 50%;
 }
 
-nav {
-    display: flex; /* Alinea los elementos de navegación en línea */
-    align-items: center; /* Centra verticalmente los elementos de navegación */ 
-}
-
-nav ul {
-    list-style: none;
-    display: flex; /* Alinea los elementos de navegación en línea */
+nav{
+    float: right;
 }
 
 nav ul li {
-    margin-left: 110px;
+    list-style: none;
+    margin-left: 20px;
+    padding: 30px 0;
+    float: left;
     position: relative;
 }
 
+
 nav ul li a {
     text-decoration: none;
-    color: rgb(10, 8, 8);
+    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px; /* Aumentar el tamaño de la letra */
+    text-align: center;
+    padding: 0 20px 0 20px;
 }
 
-nav ul li a::before {
+
+nav ul li a::before{
     display: block;
     content: "";
     width: 0%;
@@ -72,9 +70,8 @@ nav ul li a::before {
     transition: width 0.2s;
 }
 
-nav ul li a:hover::before {
+nav ul li a:hover::before{
     width: 100%;
-    
 }
 /* Estilo para el slider de imágenes */
 .slider-container {
