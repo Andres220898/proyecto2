@@ -12,7 +12,7 @@ body{ /*Estilo del cuerpo de la pestaña */
     background-image: url(Imagenes/portada.jpg);
     background-size: cover;
 }
-header {
+header /* estils header */ {
     background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
     width: 100%;
     clear: both;

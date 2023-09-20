@@ -51,7 +51,7 @@ nav ul li {
 }
 
 
-nav ul li a {
+nav ul li a /* estiloz nav*/  {
     text-decoration: none;
     color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
     font-weight: bold;

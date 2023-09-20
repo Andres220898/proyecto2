@@ -80,7 +80,7 @@ nav ul li a:hover::before{
     gap: 40px;
 }
 
-.mision, .vision {
+.mision, .vision /* estilos mision visio */ {
     background-color: #ffffffd2;
     border-radius: 10px;
     padding: 20px;
