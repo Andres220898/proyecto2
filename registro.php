@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost"; // Dirección del servidor de la base de datos
     $username = "root"; // Nombre de usuario para acceder a la base de datos
     $password = ""; // Contraseña para acceder a la base de datos
-    $dbname = "appvicola2"; // Nombre de la base de datos a utilizar
+    $dbname = "bd_appvicola"; // Nombre de la base de datos a utilizar
 
     // Crea una conexión a la base de datos MySQL
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -46,6 +46,7 @@ if (count($parts) >= 4) {
 $identificacion = mysqli_real_escape_string($conn, $_POST["identificacion"]);
 $correo = mysqli_real_escape_string($conn, $_POST["correo"]);
 $celular = mysqli_real_escape_string($conn, $_POST["celular"]);
+$direccion = mysqli_real_escape_string($conn, $_POST["direccion"]);
 $contraseña = mysqli_real_escape_string($conn, $_POST["contraseña"]); //, PASSWORD_DEFAULT
 
 // Construye la consulta SQL para insertar datos en la tabla de usuarios

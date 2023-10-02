@@ -29,7 +29,7 @@ include 'Configuracion.php';
                     <li><a href="Contacto.html">Contacto</a></li>
                     <li><a href="quienessomos.html">Quienes Somos</a></li>
                     <li><a href="Ubicacion.html">Ubicacion</a></li>
-                    <li><a href="compra.html" class="comp-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="compra.php" class="comp-icon"><i class="fas fa-shopping-cart"></i></a></li>
                     <li><a href="index.html" class="comp-icon"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #f00a0a;"></i></a></li>
 
                 </ul>

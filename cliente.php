@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
     <!-- stylos para el dash -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" type="text/javascript"></script>  
@@ -22,7 +22,7 @@
                 </a>
                 <input type="search" name="Buscar" placeholder="Buscar producto, cliente, proveedor..."> -->
             </article>
-            
+            <!--
             <a href="">
                 <img src="./img/campanas.png" alt="Notificaciones" title="Notificaciones">
             </a>
@@ -31,9 +31,9 @@
             </a>
             <a href="">
                 <img src="img/circulo-de-usuario.png" alt="Usuario" title="Usuario">
-            </a>
-            <a href="">
-                <img src="img/settings.png" alt="configuracion" title="Configuración">
+            </a> -->
+            <a href="ingreso.html">
+                <img src="img/logout.png" alt="Cerrar sesión" title="Cerrar sesión">
             </a>
         </header>
             <!-- parametros del menu -->
@@ -46,7 +46,7 @@
             <!-- items del menu -->
             <ul class="menu-items">
                 <li>
-                    <a href="./index.php"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
+                    <a href="./dash.php"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
                            
                 </li>
                 <li>
@@ -107,18 +107,18 @@
                                 <th>ACCIÓN</th>
                             </tr>
                         </thead>
-                        <tbody>
                         <?php
                                 include 'conexion.php';                                
                                 include 'consultaCliente.php';
                                 while($fila=mysqli_fetch_assoc($result)){
                             ?>
+                        <tbody>                       
                             <tr>
                                 <td><?php echo $fila['tipo_documento'] ?></td>
                                 <td><?php echo $fila['documento'] ?></td>
                                 <td><?php echo $fila['primer_nombre'].' '.$fila['primer_apellido'] ?></td>                                
                                 <td><?php echo $fila['correo'] ?></td>  
-                                <td><?php echo $fila['telefono'] ?></td>
+                                <td><?php echo $fila['celular'] ?></td>
                                 <td><?php echo $fila['fyh_creacion'] ?></td>
                                 <td><?php echo $fila['habilitado'] ?></td>
                                 <td>
@@ -286,7 +286,7 @@
             title: 'Reporte Salsamentaria Palermo Sur'
             }
         ],
-        pageLength: 4,
+        pageLength: 5,
         language: {
             search: "Buscar:",
             lengthMenu: "Mostrar _MENU_ registros por página",

@@ -44,7 +44,7 @@
             <!-- items del menu -->
             <ul class="menu-items">
                 <li>
-                    <a href="index.php"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
+                    <a href="dash.php"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
                            
                 </li>
                 <li>

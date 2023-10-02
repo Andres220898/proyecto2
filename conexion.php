@@ -1,5 +1,5 @@
 <?php
-$db="aplicola";
+$db="bd_appvicola";
 
 $conn = mysqli_connect("localhost", "root", "", "$db");
 

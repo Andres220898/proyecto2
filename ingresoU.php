@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "appvicola2";
+    $dbname = "bd_appvicola";
 
     // Crea una conexión a la base de datos MySQL
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -30,12 +30,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verifica si la contraseña ingresada coincide con la contraseña almacenada en la base de datos
         echo "Contraseña ingresada en el formulario: " . $contraseña; // Depuración
         echo "Contraseña almacenada en la base de datos: " . $row["contraseña"]; // Depuración
-        if (password_verify($contraseña, $row["contraseña"])) {
+        if ($contraseña == $row["contraseña"]) {
             // La contraseña es válida, por lo que el inicio de sesión es exitoso
             session_start();
             $_SESSION["persona"] = $correo; // Almacena el correo electrónico del usuario en la sesión
-            header("Location: dashboard.html"); // Redirige al usuario a la página de inicio después del inicio de sesión exitoso
-            exit();
+            if($correo == 'diego@gmail.com'){
+                header("Location: dash.php");
+                exit();
+            }else{
+                header("Location: catalogo.php");
+                exit();
+            }
         } else {
             // Contraseña incorrecta
             echo "<script>alert('Contraseña incorrecta');</script>";

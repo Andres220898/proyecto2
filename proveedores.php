@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
     <!-- stylos para el dash -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" type="text/javascript"></script>  
-    <!--librerias de bootstrap-->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
     
 </head>
@@ -28,7 +24,7 @@
                 </a>
                 <input type="search" name="Buscar" placeholder="Buscar producto, cliente, proveedor..."> -->
             </article>
-            
+            <!--
             <a href="">
                 <img src="./img/campanas.png" alt="Notificaciones" title="Notificaciones">
             </a>
@@ -37,9 +33,9 @@
             </a>
             <a href="">
                 <img src="img/circulo-de-usuario.png" alt="Usuario" title="Usuario">
-            </a>
-            <a href="">
-                <img src="img/settings.png" alt="configuracion" title="Configuración">
+            </a> -->
+            <a href="ingreso.html">
+                <img src="img/logout.png" alt="Cerrar sesión" title="Cerrar sesión">
             </a>
         </header>
             <!-- parametros del menu -->
@@ -52,7 +48,7 @@
             <!-- items del menu -->
             <ul class="menu-items">
                 <li>
-                    <a href="index.php"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
+                    <a href="dash.php"><img src="./img/caja-abierta.png" alt="Clientes">Resumen</a>    
                            
                 </li>
                 <li>
@@ -168,7 +164,7 @@
                         
                         <article class="form-group">
                             <input type="text" id="nProducto" 
-                            name="nProducto" class="form__input"  placeholder=" " autocomplete="name" required> 
+                            name="nombreP" class="form__input"  placeholder=" " autocomplete="name" required> 
                             <label for="name" class="form__label">Nombre Proveedor</label>
                             <span class="form__line"></span>
                         </article>
@@ -176,52 +172,52 @@
                             <input 
                                 class="form__input"
                                 type="text"
-                                name="proveedor"                          
+                                name="docP"                          
                                 id="text"
                                 placeholder=" "
                                 autocomplete="on"
                                 required
                             > 
-                            <label for="date" class="form__label">Numero Proveedor</label>
+                            <label for="date" class="form__label">Documento proveedor</label>
                             <span class="form__line"></span>
                         </article>
                         <article class="form-group">
                             <input 
                                 class="form__input"
-                                type="date"
-                                name="fechaV"
-                                id="date"
+                                type="text"
+                                name="tel"
+                                id="text"
                                 placeholder=""
                                 autocomplete="on"
                                 required
                             > 
-                            <label for="date" class="form__label">Fecha vencimiento</label>
+                            <label for="date" class="form__label">Telefono</label>
                             <span class="form__line"></span>
                         </article>
                         <article class="form-group">
                             <input 
                                 class="form__input"
                                 type="text"
-                                name="precioC"
-                                id="Compra"
+                                name="empresa"
+                                id="empresa"
                                 placeholder=" "
                                 autocomplete="on"
                                 required
                             > 
-                            <label for="Compra" class="form__label">Precio compra</label>
+                            <label for="Compra" class="form__label">Empresa</label>
                             <span class="form__line"></span>
                         </article>
                         <article class="form-group">
                             <input 
                                 class="form__input"
                                 type="text"
-                                name="precioV"
-                                id="venta"
+                                name="ubi"
+                                id="ubicacion"
                                 placeholder=" "
                                 autocomplete="on"
                                 required
                             > 
-                            <label for="venta" class="form__label">Precio venta</label>
+                            <label for="venta" class="form__label">Ubicacion</label>
                             <span class="form__line"></span>
                         </article>
                     
@@ -235,6 +231,7 @@
             </span>
             <label for="btn-modal" class="cerrar-modal"></label>
         </article>
+
 
           <!-- footer del dash -->
           <footer>
