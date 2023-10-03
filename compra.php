@@ -19,7 +19,7 @@ $cart = new Cart;
     <script src="https://kit.fontawesome.com/fbf50badbe.js" crossorigin="anonymous"></script>
     <script>
         function updateCartItem(obj, id) {
-            $.get("cartAction.php", {
+            $.get("AccionCarta.php", {
                 action: "updateCartItem",
                 id: id,
                 qty: obj.value
